@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<script src="/static/js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="/static/css/index.css"/>
+	</head>
+
+	<body>
+		<header>
+			<a href="#" class="logo"></a>
+			<img style="position:absolute;left:120px;top:20px"  src="/static/image/sucai/1.png">
+			<div class="desc">欢迎注册</div>
+		</header>
+		<section>
+			<form action="/carapp/update/" method="post">
+				<div class="register-box">
+					<label  class="username_label">用 户 名
+					<input name="username" maxlength="20" type="text" placeholder="您的用户名和登录名"/>
+					</label>
+					<div class="tips">
+
+					</div>
+				</div>
+				<div class="register-box">
+					<label  class="other_label">设 置 密 码
+					<input name="password" maxlength="20" type="password" placeholder="建议至少使用两种字符组合"/>
+					</label>
+					<div class="tips">
+
+					</div>
+				</div>
+				<div class="register-box">
+					<label for="username1" class="other_label">确 认 密 码
+					<input maxlength="20" type="password" placeholder="请再次输入密码"/>
+					</label>
+					<div class="tips">
+
+					</div>
+				</div>
+				<div class="register-box">
+					<label  class="other_label">
+					<span>中国 0086∨</span>
+					<input name="num" class="phone" maxlength="20" type="text" placeholder="建议使用常用手机"/>
+					</label>
+					<div class="tips">
+
+					</div>
+				</div>
+				<div class="register-box">
+					<label for="username2" class="other_label">验 证 码
+					<input maxlength="20" type="text" placeholder="请输入验证码"/>
+					</label>
+					<span id="code"></span>
+					<div class="tips">
+
+					</div>
+				</div>
+				<div class="arguement">
+					<input type="checkbox" id="xieyi"/>
+					阅读并同意
+					<a href="#">《瓜子用户注册协议》</a>
+					<a href="#">《隐私政策》</a>
+					<div class="tips">
+
+					</div>
+				</div>
+				<div class="submit_btn">
+					<button type="submit" id="submit_btn">立 即 注 册</button>
+				</div>
+			</form>
+		</section>
+		<script src="/static/js/index.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+</html>

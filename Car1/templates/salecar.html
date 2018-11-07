@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>我要卖车</title>
+		<link rel="stylesheet" type="text/css" href="/static/css/salecar.css">
+	</head>
+	<script type="application/javascript">
+		function uploadcar() {
+			location="http://127.0.0.1:8000/carapp/tijiaocar/"
+        }
+        function gujia() {
+			location="http://127.0.0.1:8000/carapp/gujia/"
+        }
+	</script>
+
+	<body>
+
+		<div class="header">
+
+			<div class="daohang">
+				<ul>
+					<li><a href="/carapp/index/">首页</a></li>
+					<li><a href="/carapp/buycar/1/0/">我要买车</a></li>
+					<li><a href="/carapp/salecar/">我要卖车</a></li>
+					<li><a href="#">瓜子服务</a></li>
+					<li><a href="#">瓜子金融</a></li>
+					<li><a href="#">毛豆新车</a></li>
+					<li><a href="/carapp/login/">{{username}}</a></li>
+					<li>|&nbsp;&nbsp;&nbsp;139-9597-0335</li>
+				</ul>
+
+		    </div>
+
+		    <div class="wenben">
+		    	<p>瓜子二手车直卖网&nbsp;&nbsp;二手车行业领军者</p>
+
+		        <input  style="border-radius: 15px; font-size: 16px" type="text" placeholder="请输入手机号码" name="tel"/>
+
+		        <button onclick="uploadcar()" style="border-radius: 15px" >免费卖车</button>
+		        <button onclick="gujia()"style="border-radius: 15px" >快速估计</button>
+		    </div>
+
+		    <div class="lianjie">
+		    	  <a href="#">首付10% ，厂商直供，爆款新车开回家    去抢购 </a>
+		    </div>
+
+		</div>
+
+		<div class="middle">
+			<a href="#"><img src="/static/image/sucai/s4.png" ></a>
+		</div>
+
+		<div class="new">
+			<p>最新成交</p>
+			<hr />
+
+		</div>
+
+		<div class="anniu">
+            <button style="border-radius: 15px" >查看全部成交车源</button>
+        </div>
+
+
+		<div class="question">
+
+			<img src="/static/image/sucai/s6.png" />
+		</div>
+
+
+		<footer class="foot">
+			<p>车好多旧机动车经纪（北京）有限公司    北京市顺义区南法信镇政府西侧(北京市旧机动车交易市场有限公司顺义分市场院内A区01号)    010-57317000 </p>
+		</footer>
+	</body>
+</html>

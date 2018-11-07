@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;					
+			}
+            body{
+				background-color: whitesmoke;
+			}
+			img{
+				width: 1349px;
+				height: auto;
+			}
+			li{
+				list-style: none;
+			}	
+			ul{
+				list-style: none;
+				display: flex;	
+				color: black;	
+				position: absolute;
+				left: 340px;
+				top: 20px;
+			}
+			.zong .daohang .u1 li a{
+				font-family: "新宋体";
+			    font-size: x-large;
+				text-decoration: none;
+				vertical-align: auto;
+				padding-left: 30px;
+				color: black;
+			}
+			.gongneng{
+				width:750px ;
+			}
+			.gongneng{
+				background-color: white;
+			 	border: 3px solid black;
+				position: absolute;
+				left: 150px;
+				top: 250px;
+				padding-left: 150px;
+				padding-right: 150px;
+				padding-bottom: 100px;
+				padding-top: 100px;
+			}
+			.kuang{
+				width: 250px;
+				height: 35px; 
+				border-radius: 15px;
+				outline:medium;
+				font-size: large
+			}
+			span{
+				font-size: large;
+				padding: 10px;
+			}
+			.tijiao{
+				background-color: lawngreen;
+				width: 200px;
+				height: 40px; 
+				border-radius: 15px;
+				outline:medium;
+				font-size: large;
+				text-align: center;
+			}
+			.gongneng img{
+				width: 180px;
+				height: 200px;
+			}
+		</style>
+	</head>
+	<script type="text/javascript">
+		 function getFileUrl(sourceId) {
+            var url;
+            if (navigator.userAgent.indexOf("MSIE")>=1) { 
+                url = document.getElementById(sourceId).value;
+            } else if(navigator.userAgent.indexOf("Firefox")>0) { 
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            } else if(navigator.userAgent.indexOf("Chrome")>0) {
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            }
+            return url;
+            }
+		
+		 function preImg(sourceId, targetId){
+            var url = getFileUrl(sourceId);
+            var imgPre = document.getElementById(targetId);
+            imgPre.src = url;
+            }
+	</script>
+	<body>
+		<div class="zong">
+			<div class="img">
+				<img src="/static/image/sucai/index/honglei1.jpg" />
+			</div>
+			<div class="daohang">
+				<ul class="u1">
+					<li><a href="/carapp/index/">首页</a></li>
+					<li><a href="/carapp/buycar/1/0/">我要买车</a></li>
+					<li><a href="/carapp/salecar/">我要卖车</a></li>
+					<li><a href="#">瓜子服务</a></li>
+					<li><a href="#">瓜子金融</a></li>
+					<li><a href="#">毛豆新车</a></li>
+					<li><a href="/carapp/login/">{{username}}</a></li>
+					<li>|&nbsp;&nbsp;&nbsp;139-9597-0335</li>
+				</ul>
+			</div>
+			<div class="gongneng">
+					<form action="/carapp/upload/" method="post" enctype="multipart/form-data">
+						  <span>品牌：</span><input class="kuang" name="pingpai" type="text">
+						  <span>车系：</span><input class="kuang" name="chexi" type="text"><br><br>
+						  <span>车型：</span><input class="kuang" name="chexin" type="text">
+						  <span>里程：</span><input class="kuang" name="licheng" type="text"><br><br>
+						  <span>排量：</span><input class="kuang" name="pailiang" type="text">
+						  <span>车主：</span><input class="kuang" name="chezhu" type="text"></br><br>	  
+						  <span>上牌时间：</span><input class="kuang" name="spsj" type="text">
+						  <span>上牌地：</span><input class="kuang" name="spd" type="text"><br><br>
+						  <span>出售价格：</span><input class="kuang" name="price" type="text">
+						  <span>座位数：</span><input class="kuang" name="zws" type="text"><br><br>
+						  <span>燃油类型：</span><input class="kuang" name="rylx" type="text">
+						  <span>变速箱：</span><input class="kuang" name="biansuxiang" type="text"><br><br>
+				          <input class="tijiao" type="file" name="qctp" id="imgOne" style="display: none;" onchange="preImg(this.id,'photo');"/> <br>
+                          <input class="tijiao" type=button value="上传汽车图片" onclick=imgOne.click()> 
+				          <input class="tijiao" type="submit" value="提交">	<br><br>
+				          <img id="photo" src="/static/image/sucai/index/8.jpg" width="150px" height="150px" style="display: block;" />
+  					</form>
+  					
+			</div>
+			
+		</div>
+	</body>
+	
+</html>

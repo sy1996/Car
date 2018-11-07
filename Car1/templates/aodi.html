@@ -1,0 +1,87 @@
+
+{% extends 'buycarbase.html' %}
+{% load static from staticfiles %}
+{% block title%}
+  奥迪
+{% endblock %}
+
+{% block css %}
+  <style>
+    .zhanshi p a{
+        font-size: x-large;
+        float: left;
+        padding-left: 20px;
+        color: black;
+        padding-top: 100px;
+    }
+    .qiche{
+        margin-left: 10px;
+        padding-top: 200px
+    }
+    .forimage{
+        float: left;
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+    .img1{
+        height: 260px;
+        width:220px;
+        border: 1px solid
+    }
+  </style>
+{% endblock %}
+
+
+
+
+{% block content %}
+	    <div class="zhanshi" >
+
+	    	<p><a href="#">全部</a></p>
+	    	<p><a href="#">付三成</a></p>
+	    	<p><a href="#">保卖车</a></p>
+
+            <div class="qiche">
+
+				{% for ss in sslist %}
+				    <div class="forimage">
+                       <img class="img1" src="{% static ss  %}"  onclick="imageslist({{ forloop.counter }})" >
+                    </div>
+				{% endfor %}
+            </div>
+        </div>
+        <div>
+
+            {% if pnum == 1 %}
+               <font>首页</font>
+               <font>上一页</font>
+            {% else %}
+
+               <a href="/carapp/buycar/1/">首页</a>
+               <a href="/carapp/buycar/{{ pnum|add:'-1' }}/">上一页</a>
+
+            {% endif %}
+       <input id="pn" style="width: 20px" type="text" value="{{ pnum }}">/{{ pnums }}
+       <input type="button" value="跳转" onclick="jump()">
+           {% if pnum == pnums %}
+               <font>尾页</font>
+               <font>下一页</font>
+               {% else %}
+
+               <a href="/carapp/buycar/{{ pnums}}/">尾页</a>
+               <a href="/carapp/buycar/{{ pnum|add:'1' }}/">下一页</a>
+
+           {% endif %}
+
+	   </div>
+{% endblock %}
+
+{% block js %}
+    <script>
+         function imageslist(id) {
+              countt=(id+{{ pnum |add:"-1"}}*5)
+              count=countt-1
+              location="http://127.0.0.1:8000/carapp/cardetail/"+count
+    }
+    </script>
+{% endblock %}

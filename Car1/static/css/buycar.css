@@ -1,0 +1,99 @@
+
+.daohang{
+    width: 100%;
+    height: 60px;
+    background-color: darkkhaki
+}
+.daohang ul{
+    padding-left:600px;
+
+}
+.daohang ul li{
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.daohang ul li a{
+    text-decoration: none;
+    color: cornsilk;
+
+}
+.shaixuan{
+    width: 1286px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    }
+a{
+    text-decoration: none;
+}
+.tab1{
+    border-color: azure;
+
+}
+.tab1 td{
+    float: left;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+li{
+    list-style: none;
+    display: block;
+
+}
+
+.tab1 td{
+        //用div的样式代替select的样式
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+        //盒子阴影修饰作用,自己随意
+        box-shadow: 0 0 1px #ccc;
+        position: relative;
+    }
+select{
+        //清除select的边框样式
+        border: none;
+        //清除select聚焦时候的边框颜色
+        outline: none;
+        //将select的宽高等于div的宽高
+        width: 100%;
+        heigh:25px;
+        line-height: 40px;
+        /*//隐藏select的下拉图标
+        appearance: none;
+         -webkit-appearance: none;
+         -moz-appearance: none;*/
+        //通过padding-left的值让文字居中
+        padding-left: 60px;
+    }
+.zhanshi p a{
+    font-size: x-large;
+    float: left;
+    padding-left: 20px;
+    color: black;
+    padding-top: 100px;
+}
+.qiche{
+    margin-left: 10px;
+    padding-top: 150px
+}
+.forimage{
+    float: left;
+
+    padding-left: 20px;
+
+}
+.img1{
+    padding-bottom: 50px;
+    height: 260px;
+    width:220px;
+    border: 1px solid
+}
+.fanye{
+    position: absolute;
+    padding-top: 350px;
+    left: 450px;
+}

@@ -1,0 +1,214 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>我要买车</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/buycar.css">
+	</head>
+    <script >
+         function imageslist(id) {
+              countt=id
+              alert(countt)
+              count=countt+1
+              location="http://127.0.0.1:8000/carapp/cardetail/"+count
+    }
+
+    </script>
+	<body>
+		<div class="daohang">
+			<ul>
+				<li><a href="/carapp/index/">首页</a></li>
+				<li><a href="/carapp/buycar/1/0/">我要买车</a></li>
+				<li><a href="/carapp/salecar/">我要卖车</a></li>
+				<li><a href="#">瓜子服务</a></li>
+				<li><a href="#">瓜子金融</a></li>
+				<li><a href="#">毛豆新车</a></li>
+				<li><a href="/carapp/index/">{{username}}</a></li>
+				<li>|&nbsp;&nbsp;&nbsp;139-9597-0335</li>
+			</ul>
+		</div>
+
+		<div class="shaixuan">
+			<table class="tab1">
+				<tr>
+					<td>品牌</td>
+					<td class="td1"><a href="#">不限</a></td>
+					<td><a href="/carapp/buycar/1/1">大众</a></td>
+					<td><a href="/carapp/buycar/1/2">别克</a></td>
+					<td><a href="/carapp/buycar/1/3">本田</a></td>
+					<td><a href="/carapp/buycar/1/4">标致</a></td>
+					<td><a href="/carapp/buycar/1/5">雪佛兰</a></td>
+					<td><a href="/carapp/buycar/1/6">宝马</a></td>
+					<td><a href="/carapp/buycar/1/7">福特</a></td>
+					<td><a href="/carapp/buycar/1/8">日产</a></td>
+					<td><a href="/carapp/buycar/1/9" >奥迪</a></td>
+					<td><a href="/carapp/buycar/1/10" >奔驰</a></td>
+					<td><a href="/carapp/buycar/1/11">哈弗</a></td>
+					<td><a href="/carapp/buycar/1/12">东风风神</a></td>
+					<td><a href="/carapp/buycar/1/13">雪铁龙</a></td>
+					<td><a href="/carapp/buycar/1/14">现代</a></td>
+					<td>全部</td>
+				</tr>
+				<tr>
+					<td>车系</td>
+					<td class="td1"><a href="#">不限</a></td>
+					<td><a href="#"></a></td>
+					<td><a href="#"></a></td>
+
+				</tr>
+
+				<tr>
+					<td>价格</td>
+					<td class="td1"><a href="#">不限</a></td>
+					<td><a href="#">三万以下</a></td>
+					<td><a href="#">3-5万</a></td>
+					<td><a href="#">5-7万</a></td>
+					<td><a href="#">7-9万</a></td>
+					<td><a href="#">9-12万</a></td>
+					<td><a href="#">12-16万</a></td>
+					<td><a href="#">16-20万</a></td>
+					<td><a href="#">20万以上</a></td>
+				</tr>
+
+				<tr>
+					<td>更多</td>
+					<td>
+						<select name="">
+					        <option value="车龄">车龄</option>
+					        <option value="不限">不限</option>
+					        <option value="一年以内">一年以内</option>
+					        <option value="三年以内">三年以内</option>
+					        <option value="五年以内">五年以内</option>
+					        <option value="八年以内">八年以内</option>
+					        <option value="八年以上">八年以上</option>
+                        </select>
+
+					</td>
+
+					<td>
+						<select name="">
+					        <option value="变速箱">变速箱</option>
+					        <option value="不限">不限</option>
+					        <option value="手动">手动</option>
+					        <option value="自动">自动</option>
+                        </select>
+					</td>
+
+					<td>
+					   <select name="">
+					        <option value="车型">车型</option>
+					        <option value="不限">不限</option>
+					        <option value="两厢轿车">两厢轿车</option>
+					        <option value="三厢轿车">三厢轿车</option>
+					        <option value="面包车">面包车</option>
+					        <option value="跑车">跑车</option>
+					        <option value="皮卡">皮卡</option>
+					        <option value="SUV">SUV</option>
+					        <option value="MPV">MPV</option>
+
+                       </select>
+					</td>
+
+					<td>
+						<select name="">
+					        <option value="里程">里程</option>
+					        <option value="不限">不限</option>
+					        <option value="一万公里以内">一万公里以内</option>
+					        <option value="三万公里以内">三万公里以内</option>
+					        <option value="五万公里以内">五万公里以内</option>
+					        <option value="八万公里以内">八万公里以内</option>
+					        <option value="十万公里以内">十万公里以内</option>
+					        <option value="十万公里以上">十万公里以上</option>
+                       </select>
+                    </td>
+
+					<td>
+						<select name="">
+					        <option value="排量">排量</option>
+					        <option value="不限">不限</option>
+					        <option value="1.0L以下">1.0L以下</option>
+					        <option value="1.0L-1.6L">1.0L-1.6L</option>
+					        <option value="1.6-2.0L">1.6-2.0L</option>
+					        <option value="2.0L-3.0L">2.0L-3.0L</option>
+					        <option value="3.0L-4.0L">3.0L-4.0L</option>
+					        <option value="4.0L以上">4.0L以上</option>
+                       </select>
+
+					</td>
+
+					<td>
+						<select name="">
+					        <option value="座位数" >座位数</option>
+					        <option value="不限">不限</option>
+					        <option value="2座">2座</option>
+					        <option value="4座">4座</option>
+					        <option value="5座">5座</option>
+					        <option value="6座">6座</option>
+					        <option value="7座以上">7座以上</option>
+
+                       </select>
+                    </td>
+
+					<td>
+						<select name="">
+					        <option value="燃油类型">燃油类型</option>
+					        <option value="不限">不限</option>
+					        <option value="汽油">汽油</option>
+					        <option value="柴油">柴油</option>
+					        <option value="电动">电动</option>
+					        <option value="油电混合">油电混合</option>
+					        <option value="其它">其它</option>
+
+                       </select>
+					</td>
+
+				</tr>
+			</table>
+		</div>
+
+	    <div class="zhanshi" >
+
+	    	<p><a href="#">全部</a></p>
+	    	<p><a href="#">付三成</a></p>
+	    	<p><a href="#">保卖车</a></p>
+
+            <div class="qiche">
+
+				 {% for ss in sslist %}
+				    <div class="forimage">
+                       <img id="" class="img1" src="{% static ss  %}"  onclick="imageslist({{ forloop.counter }})" >
+                    </div>
+				 {% endfor %}
+
+            </div>
+        </div>
+        <div class="fanye">
+
+            {% if pnum == 1 %}
+               <font>首页</font>
+               <font>上一页</font>
+            {% else %}
+
+               <a href="/carapp/buycar/1/0">首页</a>
+               <a href="/carapp/buycar/{{ pnum|add:'-1' }}/0">上一页</a>
+
+            {% endif %}
+            <input id="pn" style="width: 20px" type="text" value="{{ pnum }}">/{{ pnums }}
+            <input type="button" value="跳转" onclick="jump()">
+            {% if pnum == pnums %}
+               <font>尾页</font>
+               <font>下一页</font>
+               {% else %}
+
+               <a href="/carapp/buycar/{{ pnums}}/0">尾页</a>
+               <a href="/carapp/buycar/{{ pnum|add:'1' }}/0">下一页</a>
+
+            {% endif %}
+
+	   </div>
+
+
+	</body>
+</html>

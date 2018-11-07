@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style1.css">
+</head>
+<script type="text/javascript">
+    function jump(){
+       location="http://127.0.0.1:8000/carapp/zhuce/"
+    }
+
+</script>
+<body background="/static/image/sucai/3.jpg">
+<div class="con0"><img src="/static/image/sucai/1.png"></div>
+<form action="/carapp/tz/" method="post">
+    <div class="con1"><font>用户名:&nbsp</font></div>
+    <div class="con2"><input type="text" name="username"></div>
+    <div class="con3"><font>密&nbsp&nbsp&nbsp码:&nbsp</font></div>
+    <div class="con4">
+        <input type="password" name="password"> <p>{{tishi}}</p>
+    </div>
+    <div class="con5"><input type="submit" value="登录"></div>
+    <div class="con6" ><input type="button" value="注册" onclick="jump()"></div>
+</form>
+
+
+
+</body>
+</html>

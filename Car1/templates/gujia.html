@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    	<script type="application/javascript">
+		shenglist1=["湖北","湖南","广东","北京"]
+		citylist1=[["武汉","十堰","荆门","安陆"],["长沙","衡阳","岳阳","邵阳"],["广州","深圳","东莞","珠海"],["北京"]]
+		snm=0
+		function shengchange1(m){
+			shistr1=""
+			for(var index=0;index<citylist1[m].length;index++){
+				str1="<option>"+citylist1[m][index]+"</option>"
+				shistr1+=str1
+			}
+			document.getElementById("shi1").innerHTML=shistr1
+
+			snm=m
+
+
+		}
+		function startset1(){
+			shengstr1=""
+			for(var index=0;index<shenglist1.length;index++) {
+
+				str1="<option>"+shenglist1[index]+"</option>"
+				shengstr1+=str1
+			}
+
+			document.getElementById("sheng1").innerHTML=shengstr1
+
+			shengchange1(0)
+		}
+
+
+
+
+
+
+		shenglist=["宝马","奔驰","奥迪","大众"]
+		citylist=[["宝马一系","宝马三系","宝马五系","宝马七系"],["奔驰A级","奔驰C级","奔驰S级","奔驰M级"],["奥迪A5","奥迪A6","奥迪A7"],["桑塔纳","速腾","辉腾"]]
+		qulist=[[["一系2018款","一系2017款","一系2016款","一系2015款"],["三系2018款","三系2017款","三系2016款","三系2015款"],["五系2018款","五系2017款","五系2016款","五系2015款"],["七系2018款","七系2017款","七系2016款","七系2015款"]],[["A级2018款","A级2017款","A级2016款","A级2015款"],["C级2018款","C级2017款","C级2016款","C级2015款"],[],[]]]
+		sn=0
+		function shichange(m){
+			qustr=""
+			for (var index=0;index<qulist[sn][m].length;index++){
+				str="<option>"+qulist[sn][m][index]+"</option>"
+				qustr+=str
+			}
+			document.getElementById("qu").innerHTML=qustr
+		}
+		function shengchange(n){
+
+			shistr=""
+			for(var index=0;index<citylist[n].length;index++){
+				str="<option>"+citylist[n][index]+"</option>"
+				shistr+=str
+			}
+			document.getElementById("shi").innerHTML=shistr
+
+			sn=n
+			shichange(0)
+
+		}
+		function startset(){
+			shengstr=""
+			for(var index=0;index<shenglist.length;index++) {
+
+				str="<option>"+shenglist[index]+"</option>"
+				shengstr+=str
+			}
+
+			document.getElementById("sheng").innerHTML=shengstr
+
+			shengchange(0)
+		}
+
+
+
+
+		shenglist2=["2018年","2017年","2016年","2015年","2014年"]
+		citylist2=[["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],
+		["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],
+		["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],
+		["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],
+		["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"]]
+		snmm=0
+		function shengchange2(z){
+			shistr2=""
+			for(var index=0;index<citylist2[z].length;index++){
+				str2="<option>"+citylist2[z][index]+"</option>"
+				shistr2+=str2
+			}
+			document.getElementById("shi2").innerHTML=shistr2
+
+			snmm=z
+
+
+		}
+		function startset2(){
+			shengstr2=""
+			for(var index=0;index<shenglist2.length;index++) {
+
+				str2="<option>"+shenglist2[index]+"</option>"
+				shengstr2+=str2
+			}
+
+			document.getElementById("sheng2").innerHTML=shengstr2
+
+			shengchange2(0)
+		}
+		function gujia(){		
+			alert("您的爱车我们估价为"+parseInt(Math.random()*21+9, 10)+"万元人民币")
+		}
+
+
+	</script>
+</head>
+<body onload="startset();startset1();startset2()" bgcolor="#fffaf0">
+	<div class="liandong">	
+	    <div class="dizhi">
+				<span>省&nbsp;&nbsp;份</span>
+				<select id="sheng1" onchange="shengchange1(this.selectedIndex)">
+			 </select>
+				<span>市&nbsp;&nbsp;区</span>
+				<select id="shi1">
+			    </select>
+	    </div><br />
+	
+	
+	
+	    <div class="shijian">
+				<span>年&nbsp;&nbsp;份</span>
+				<select id="sheng2" onchange="shengchange2(this.selectedIndex)" >
+			    </select>
+				<span>月&nbsp;&nbsp;份</span>
+				<select id="shi2">
+			    </select>
+	    </div><br />
+	
+	
+	    <div class="sjld">
+				<span>品&nbsp;&nbsp;牌</span>
+				<select id="sheng" onchange="shengchange(this.selectedIndex)">
+				</select>
+				<span>车&nbsp;&nbsp;系</span>
+				<select id="shi" onchange="shichange(this.selectedIndex)" >
+				</select>
+				<span>车&nbsp;&nbsp;型</span>
+				<select id="qu" >
+				</select>
+	    </div><br />
+	
+	
+	    <div class="button">
+	    	<button id="tijiao" style="width: 100px;height: 35px; border-radius: 10px;outline:medium;background-color: white;font-size: large;" onclick="gujia()">提&nbsp;&nbsp;交</button>
+	    	<button id="chongzhi" style="width: 100px;height: 35px; border-radius: 10px;outline:medium;background-color: white;font-size: large;">重&nbsp;&nbsp;置</button>
+	    </div>
+        <div class="title">
+            <p>瓜子二手车估价</p>
+        </div>
+	</div>    
+</body>
+<style type="text/css">
+	span{
+		font-size: larger;
+		padding: 10px;
+	}
+	.liandong{
+        background-color: white;
+	 	border: 3px solid black;
+		position: absolute;
+		left: 150px;
+		top: 70px;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 150px;
+		padding-top: 150px;
+	}
+	.button{
+		text-align: center;
+
+	}
+	select{
+		width: 250px;
+		height: 35px; 
+		border-radius: 10px;
+		outline:medium;
+		font-size: large
+	}
+    .title{
+        font-size: xx-large;
+        font-family: 新宋体;
+        position: absolute;
+        left: 430px;
+        top: 20px;
+    }
+</style>
+</html>

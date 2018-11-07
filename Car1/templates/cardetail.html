@@ -1,0 +1,338 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;					
+			}
+            body{
+				background-color: white;
+			}
+			li{
+				list-style: none;
+			}	
+			ul{
+				list-style: none;
+				display: flex;	
+				color: black;	
+				position: absolute;
+				left:450px;
+				top: 20px;
+			}
+			.zong .daohang .u1 li a{
+				font-family: "新宋体";
+			    font-size: larger;
+				text-decoration: none;
+				vertical-align: auto;
+				padding-left: 30px;
+				color: black;
+			}
+			.xian{
+				width:1348px;
+				height:1px;
+				margin:0px auto;
+				padding:0px;
+				background-color:#D5D5D5;
+				overflow:hidden;
+				position: absolute;
+				top: 65px;
+			}
+			.img1{
+				position: absolute;
+				left: 150px;
+			}
+			
+
+			
+			
+			.a_img{
+				width: 100%;
+				height: 600px;
+				overflow: hidden;		
+				z-index: 1;
+			}
+			.a_img img{
+				position: absolute;
+				left: 330px;
+				top: 130px;
+				width: 400px;
+				height: auto;		
+				margin-left: -180px;
+            }
+            #wangzuo{
+				position: absolute;
+				top: 37%;
+				left: 8%;
+				width: 30px;
+				height: 60px;
+				color: black;
+				text-align: center;
+				line-height: 60px;
+				font-size: 20px;
+			}
+			#wangzuo:hover{
+				background-color: grey;
+				cursor: pointer;
+			}
+			#wangyou{
+				position: absolute;
+				top: 37%;
+				left: 41%;
+				width: 30px;
+				height: 60px;
+				color: black;
+				text-align: center;
+				line-height: 60px;
+				font-size: 20px;
+			}
+			#wangyou:hover{
+				background-color: grey;
+				cursor: pointer;
+			}
+            .zi1 .z1{
+				color: gray;
+				font-size: small;
+				position: absolute;
+				left: 150px;
+				top: 90px;
+			}
+			.zi1 .z2{
+				color: gray;
+				font-size: small;
+				position: absolute;
+				left: 700px;
+				top: 90px;
+			}
+			.zi1 .z3{
+				color: black;
+				font-size: x-large;
+				position: absolute;
+				left: 600px;
+				top: 130px;
+			}
+			.zi1 .z4{
+				color: black;
+				font-size: large;
+				position: absolute;
+				left: 1100px;
+				top: 135px;
+			}
+			.zi1 .z5{
+				color: black;
+				font-size: large;
+				position: absolute;
+				left: 600px;
+				top: 175px;
+			}
+			.zi1 .z6{
+				color: black;
+				font-size: large;
+				position: absolute;
+				left: 700px;
+				top: 175px;
+			}
+			.zi1 .z7{
+				color: black;
+				font-size: large;
+				position: absolute;
+				left: 820px;
+				top: 175px;
+			}
+			.zi1 .z8{
+				color: black;
+				font-size: large;
+				position: absolute;
+				left: 890px;
+				top: 175px;
+			}
+			.zi1 .z9{
+				color: black;
+				font-size: large;
+				position: absolute;
+				left: 960px;
+				top: 175px;
+			}
+			.zi1 .z10{
+				color: orangered;
+				font-size: 33px;
+				position: absolute;
+				left: 595px;
+				top: 210px;
+			}
+			.zi1 .img1{
+				width: 560px;
+				height: auto;
+				position: absolute;
+				left: 595px;
+				top: 270px;
+			}
+			.b1{
+				font-size: 20px;
+				background-color: orangered;
+				width: 120px;
+				height: 45px;
+				position: absolute;
+				left: 150px;
+				top: 450px;
+				border-radius: 15px;
+				outline:medium;
+			}
+			.b2{
+				font-size: 20px;
+				background-color: limegreen;
+				width: 120px;
+				height: 45px;
+				position: absolute;
+				left: 290px;
+				top: 450px;
+				border-radius: 15px;
+				outline:medium;
+			}
+			.b3{
+				font-size: 20px;
+				background-color: white;
+				width: 120px;
+				height: 45px;
+				position: absolute;
+				left: 430px;
+				top: 450px;
+				border-radius: 15px;
+				outline:medium;
+			}
+			.zi1 .img2{
+                width: 1000px;
+                height: auto;
+				position: absolute;
+				left: 150px;
+				top: 600px;
+			}
+			.zi1 .img3{
+				width: 1348px;
+				position: absolute;
+				left: 0px;
+				top: 1300px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="zong">
+			<div class="img1">
+				<img src="/static/image/sucai/index/0.jpg"/>
+			</div>
+			<div class="daohang">
+				<ul class="u1">
+					<li><a href="/carapp/index/">首页</a></li>
+					<li><a href="/carapp/buycar/1/0/">我要买车</a></li>
+					<li><a href="/carapp/salecar/">我要卖车</a></li>
+					<li><a href="#">瓜子服务</a></li>
+					<li><a href="#">瓜子金融</a></li>
+					<li><a href="https://www.maodou.com/?ca_s=xcsop_guazipc&ca_n=topbar">毛豆新车</a></li>
+					<li><a href="/carapp/login/">{{username}}</a></li>
+					<li>|&nbsp;&nbsp;&nbsp;139-9597-0335</li>
+				</ul>
+			</div>
+			<div class="xian"></div>
+			<div class="zi1">
+				<p class="z1">{{pingpai}}&nbsp;&nbsp; {{chexin}} {{chexi}}</p>
+				<p class="z2">车源号：HC-48317319</p>
+				<p class="z3">{{pingpai}}&nbsp;&nbsp;{{chexin}} {{chexi}}</p>
+				<p class="z4">保卖车&nbsp;&nbsp;&nbsp;&nbsp;4s保养</p>
+				<p class="z5">{{spsj}}</p>
+				<p class="z6">{{licheng}}公里</p>
+				<p class="z7">{{spd}}</p>
+				<p class="z8">{{pailiang}}T</p>
+				<p class="z9">{{biansuxiang}}</p>
+				<p class="z10">￥{{price}}万</p>
+				<img class="img1" src="/static/image/sucai/car6.jpg" />
+				<button class="b1" onclick="yuyue()">预约看车</button>
+				<button class="b2" onclick="kanjia()">我要砍价</button>
+				<button class="b3" onclick="dadianhua()">免费咨询</button>
+				<img class="img2" src="/static/image/sucai/xiangxi1.jpg" />
+				<img class="img3" src="/static/image/sucai/car8.jpg" />
+				
+			</div>
+			<div class="a_img">
+				<img src="/static/image/usercar/{{user}}/{{imgadress}}" id="img"/>
+				<p id="wangzuo" onclick="left()">&#10094;</p>
+				<p id="wangyou" onclick="right()">&#10095;</p>
+
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="/static/js/jquery-1.11.1.js" ></script>
+	<script type="text/javascript">
+		function yuyue() {
+
+			var tel=prompt("联系方式","手机号码");
+			if (tel!=NaN){
+               $.ajax({
+					url: "/carapp/buyer/",
+					data: JSON.stringify({    // JSON格式封装数据
+						tel: tel,
+
+					}),
+					contentType: 'application/json',
+					type: "POST",
+					traditional: true,    // 需要传递列表、字典时加上这句
+					success: function() {
+					    alert("预约成功");
+					},
+					fail: function() {
+                        alert("预约失败");
+				 }
+               });
+			}
+        }
+
+        function kanjia() {
+			var price=prompt("您期待的价格");
+			alert("您期待的价格我们会及时上报车主,先可以预约看车了！")
+        }
+        function dadianhua() {
+			alert("如有疑问，请拨打官方客服热线：13995970335")
+        }
+		// 汽车轮播图
+		// var m;
+		// var slideshow;
+		// function run(n){
+		// 	a = n-1;
+		// 	var src = "/static/image/usercar/{{user}}/奔驰'+4+'.jpg";
+		// 	$(".a_img ul li").eq(a).addClass("bjc").siblings().removeClass("bjc");
+		// 	$("#img").attr("src",src);
+		// 	m =n;
+		// 	n++;
+		// 	if(n==5){
+		// 		n=1;
+		// 	}
+		// 	x = n;
+		//
+		// }
+		// function left(){
+		// 	clearTimeout(slideshow);
+		// 	k = m-1;
+		// 	if(k==0){
+		// 		k=4
+		// 	}
+		// 	run(k);
+		// }
+		// function right(z){
+		// 	clearTimeout(slideshow);
+		// 	k = m+1;
+		// 	if(k==5){
+		// 		k=1
+		// 	}
+		// 	run(k);
+		// }
+		// $(".a_img ul>li").click(function(){
+		// 	var index = $(this).index()+1;
+		// 	console.log(index);
+		// 	run(index)
+		// })
+		//
+		// run(1)
+	</script>
+</html>

@@ -1,0 +1,82 @@
+.con2 input[type=text]{
+	width: 300px;
+	height: 50px;
+	position: absolute;
+	left: 533px;
+	top: 200px;
+	border-radius: 30px;
+	border: 1px solid wheat;
+	outline: none;
+	font:"微软雅黑";
+	font-size: 25px;
+}
+
+
+.con4 input[type=password]{
+	width: 300px;
+	height: 50px;
+	position: absolute;
+	left: 533px;
+	top: 300px;
+	border-radius: 30px;
+	border: 1px solid wheat;
+	outline: none;
+	font: "微软雅黑";
+	font-size: 25px;
+}
+
+
+
+
+.con1 font{
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	left: 430px;
+	top: 215px;
+	font-size: 25px;
+}
+
+.con3 font{
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	left: 430px;
+	top: 315px;
+	font-size: 25px;
+}
+
+.con5 input[type=submit]{
+    width=160px;
+    height=40px;
+    position:absolute;
+    left:500px;
+    top:400px;
+    border-radius:5em;
+    border:2px solid wheat;
+    color:white;
+    outline: none;
+    background-color: forestgreen;
+	font-size: 25px;
+}
+.con6 input[type=button]{
+    width=300px;
+    height=100px;
+    position:absolute;
+    left:750px;
+    top:400px;
+    border-radius:8em;
+    border:2px solid wheat;
+    color:white;
+    outline: none;
+    background-color:forestgreen;
+	font-size: 25px;
+}
+
+.con0 img{
+    width=100px;
+    height=100px;
+    position:absolute;
+    left:633px;
+    top:100px;
+}
